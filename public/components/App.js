@@ -4,7 +4,13 @@ export default class App extends React.Component {
   componentDidMount() {
     const observer = new IntersectionObserver((changes) => {
       changes.forEach((change) => {
-        console.log(change);
+        console.log(change.target.textContent, 'intersectionRatio: ', change.intersectionRatio, 'isIntersecting: ', change.isIntersecting);
+        // console.log(change);
+        if (change.isIntersecting) {
+          change.target.classList.add('is-active');
+        } else {
+          change.target.classList.remove('is-active');
+        }
       });
     });
     const steps = document.querySelectorAll('.step');
