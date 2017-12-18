@@ -1,6 +1,18 @@
 import React from 'react';
 
 export default class App extends React.Component {
+  componentDidMount() {
+    const observer = new IntersectionObserver((changes) => {
+      changes.forEach((change) => {
+        console.log(change);
+      });
+    });
+    const steps = document.querySelectorAll('.step');
+    steps.forEach((step) => {
+      observer.observe(step);
+    });
+  }
+
   render() {
     return (
       <div id="container">
