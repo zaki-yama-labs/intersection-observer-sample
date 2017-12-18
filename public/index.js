@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 import configureStore from './store/configureStore';
-import App from './containers/App';
+import App from './components/App';
 
 import './styles/index.scss';
 
@@ -23,7 +23,7 @@ render(
 );
 
 if (module.hot) {
-  module.hot.accept('./containers/App', () => {
+  module.hot.accept('./components/App', () => {
     render(
       <AppContainer>
         <Provider store={store}>
