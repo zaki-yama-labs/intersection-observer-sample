@@ -5,6 +5,7 @@
 ![](https://ja.gravatar.com/userimage/60595238/92de448d5685d202faa413daf3951a0c.png)
 
 ##### Twitter: @zaki___yama
+##### ~~フロントエンドエンジニア~~ プロダクトマネージャー
 
 
 
